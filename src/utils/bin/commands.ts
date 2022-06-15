@@ -1,3 +1,4 @@
+import { readme } from './api_commands';
 // List of commands that do not require API calls
 
 import * as bin from './index';
