@@ -1,39 +1,32 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readmeUrl": "https://github.com/kazim-kayhan/kazimkayhan/blob/master/README.md",
+  "title": "Kazim Kayhan",
+  "name": "Kazim Kayhan",
+  "ascii": "kazim kayhan",
+  "avatar": "/assets/images/avatar.png",
+  "logo": "/assets/images/logo.png",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "https://github.com/kazim-kayhan/",
+    "linkedin": "https://www.linkedin.com/in/kazim-kayhan/"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "email": "mail4kazim.kayhan@gmail.com",
+  "ps1_username": "kazim",
+  "ps1_hostname": "kayhan",
+  "repo": "https://github.com/kazim-kayhan/kazimkayhan",
+  "resume_url": "/assets/files/KazimKayhanResume.pdf",
   "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
+    "paypal": "https://paypal.me/kazimkayhan",
+    "patreon": "https://patreon.com/kazimkayhan"
   },
   "colors": {
-    "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
-      "yellow": "#D79921",
-      "green": "#98971A",
-      "gray": "#7C6F64",
-      "blue": "#458588",
-      "red": "#CA2124"
-    },
     "dark": {
-      "background": "#2E3440",
+      "background": "#1c1d1f",
       "foreground": "#E5E9F0",
-      "yellow": "#5E81AC",
-      "green": "#A3BE8C",
-      "gray": "#88C0D0",
-      "blue": "#EBCB8B",
-      "red": "#BF616A"
+      "yellow": "#ecca06",
+      "blue": "#0dc9c9",
+      "green": "#37a815",
+      "gray": "#e60790",
+      "red": "#f504e9"
     }
   }
 }
