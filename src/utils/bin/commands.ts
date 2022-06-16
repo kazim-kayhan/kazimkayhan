@@ -7,7 +7,7 @@ import config from '../../../config.json';
 // Help
 export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
-  var c = '';
+  let c = '';
   for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
     if (i % 7 === 0) {
       c += Object.keys(bin).sort()[i - 1] + '\n';
@@ -124,33 +124,36 @@ export const date = async (args: string[]): Promise<string> => {
 };
 
 export const vi = async (args: string[]): Promise<string> => {
-  return `woah, you still use 'vi'? just try 'vim'.`;
+  return `Woah, you still use 'vi'? Just try 'vim'.`;
 };
 
 export const vim = async (args: string[]): Promise<string> => {
-  return `'vim' is so outdated. how about 'nvim'?`;
+  return `'vim' is so outdated. How about 'nvim'?`;
 };
 
 export const nvim = async (args: string[]): Promise<string> => {
-  return `'nvim'? too fancy. why not 'emacs'?`;
+  return `'nvim'? Too fancy. Why not 'emacs'?`;
 };
 
 export const emacs = async (args?: string[]): Promise<string> => {
-  return `you know what? just use vscode.`;
+  return `You know what? Just use vscode.`;
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=ynUHE4OFg9E', '_blank');
-  return `Permission denied: with little power comes... no responsibility? `;
+  setTimeout(() => {
+    window.open('https://two-dice.netlify.app/', '_blank');
+  }, 2000);
+  return `Permission denied, lets do something else.`;
 };
 
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-  <div class="flex justify-start items-end">
-  <Image src="${config.logo}" width="200px" height="200px" alt="Kazim Kayhan's avatar" className="mr-8"/>
-  <Image src="${config.avatar}" width="240" height="200" alt="Kazim Kayhan's avatar" className="mr-8"/>
-  </div>
+  <Image src="${config.avatar}" width="240" height="240" alt="Kazim Kayhan's avatar"/>
+  ╦╔═┌─┐┌─┐┬┌┬┐  ╦╔═┌─┐┬ ┬┬ ┬┌─┐┌┐┌
+  ╠╩╗├─┤┌─┘││││  ╠╩╗├─┤└┬┘├─┤├─┤│││
+  ╩ ╩┴ ┴└─┘┴┴ ┴  ╩ ╩┴ ┴ ┴ ┴ ┴┴ ┴┘└┘
+  
   Type 'help' to see the list of available commands.
   Type 'summary' to briefly introduce myself.
 `;
