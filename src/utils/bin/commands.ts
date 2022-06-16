@@ -16,10 +16,9 @@ export const help = async (args: string[]): Promise<string> => {
     }
   }
   return `Welcome! Here are all the available commands:
-\n${c}\n
-[tab]: trigger completion.
-[ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
+  \n${c}\n
+Press 'Tab' to trigger auto completion.
+press 'Ctrl+l' or type 'clear' to clear the terminal.
 `;
 };
 
@@ -32,11 +31,17 @@ export const repo = async (args: string[]): Promise<string> => {
 // About
 export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}. 
-Welcome to my website!
-More about me:
-'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+Welcome to my portfolio!
+To know more about me, please type:\n
+'summary'   --> For a brief introduction.
+'resume'    --> For my latest resume.
+'skills'    --> To list my skills.
+'projects'  --> To load my projects.
+'github'    --> For my github profile.
+'linkedin'  --> For my linkedin profile.
+'education' --> To list my education.
+'experience'--> To list my experiences.
+'email'     --> To email me.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -98,7 +103,7 @@ export const echo = async (args: string[]): Promise<string> => {
 };
 
 export const whoami = async (args: string[]): Promise<string> => {
-  return `${config.ps1_username}`;
+  return `${config.name}`;
 };
 
 export const ls = async (args: string[]): Promise<string> => {
@@ -146,8 +151,7 @@ export const banner = (args?: string[]): string => {
   <Image src="${config.logo}" width="200px" height="200px" alt="Kazim Kayhan's avatar" className="mr-8"/>
   <Image src="${config.avatar}" width="240" height="200" alt="Kazim Kayhan's avatar" className="mr-8"/>
   </div>
-Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
+  Type 'help' to see the list of available commands.
+  Type 'summary' to briefly introduce myself.
 `;
 };
