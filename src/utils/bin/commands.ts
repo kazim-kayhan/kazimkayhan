@@ -42,6 +42,7 @@ To know more about me, please type:\n
 'linkedin'  --> For my linkedin profile.
 'education' --> To list my education.
 'experience'--> To list my experiences.
+'technologies'     --> To list technologies I'm using.
 'email'     --> To email me.`;
 };
 
@@ -69,6 +70,11 @@ export const education = () => {
 // Experience
 export const experience = () => {
   return `Experience...`;
+};
+
+// technologies
+export const technologies = () => {
+  return `Technologies...`;
 };
 
 // Donate
